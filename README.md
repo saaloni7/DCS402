@@ -1,19 +1,25 @@
 # DCS402 — Data Analytics & Visualization
 
-This repository contains coursework, data cleaning notebooks, and visual analytics assignments analyzing how different chart types impact audience interpretation.
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458.svg)](https://pandas.pydata.org/)
+[![Seaborn](https://img.shields.io/badge/Seaborn-Visualization-4c72b0.svg)](https://seaborn.pydata.org/)
+
+This repository contains coursework, data cleaning pipelines, and visual analytics assignments analyzing how different chart types impact audience interpretation.
 
 ---
 
-## Repository Structure
+## 📁 Repository Structure
 
-```
+```text
+DCS402/
 ├── .gitignore
 ├── README.md
 └── pandas/
-    ├── cleaning.ipynb              # Data cleaning workflows and methods
-    ├── pandas.ipynb                # Pandas exploration and manipulation
+    ├── cleaning.ipynb              # NFL play-by-play data cleaning & missing value handling
+    ├── pandas.ipynb                # Core Pandas series, dataframes, indexing & wrangling
     └── assig/
-        ├── assig.ipynb             # Assignment notebook with complete code & discussion
+        ├── assig.ipynb             # Assignment notebook with comparative code & charts
         ├── kaggle_titanic.csv      # Dataset 1: Categorical / survival data
         ├── kaggle_sales_trends.csv # Dataset 2: 24-Month continuous time-series
         ├── kaggle_house_prices.csv # Dataset 3: Continuous bivariate property data
@@ -24,15 +30,36 @@ This repository contains coursework, data cleaning notebooks, and visual analyti
 
 ---
 
-## Assignment: Impact of Chart Types on Audience Interpretation
+## 🚀 Getting Started & Execution
 
-### Introduction
+1. **Clone the repository:**
+   ```bash
+   git clone git@github.com:saaloni7/DCS402.git
+   cd DCS402
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   pip install pandas numpy matplotlib seaborn jupyter
+   ```
+
+3. **Launch Jupyter Notebook:**
+   ```bash
+   jupyter notebook
+   ```
+   Navigate to `pandas/assig/assig.ipynb` to run the comparative visualization code.
+
+---
+
+## 📊 Assignment: Impact of Chart Types on Audience Interpretation
+
+### 1. Introduction
 Data visualization translates complex quantitative data into intuitive visual patterns. Human perception decodes spatial position and length along a common baseline with far greater speed and precision than angles, areas, or disconnected categories. Selecting the right chart ensures audiences grasp key trends immediately without cognitive fatigue or distorted interpretations.
 
-### Kaggle Datasets Used
-1. **Titanic Survival Dataset:** [Kaggle Titanic Competition](https://www.kaggle.com/competitions/titanic) (Categorical proportions)
-2. **Superstore Sales Dataset:** [Kaggle Sales Forecasting](https://www.kaggle.com/datasets/rohitsahoo/sales-forecasting) (Continuous time-series)
-3. **Ames House Prices Dataset:** [Kaggle House Prices Competition](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques) (Continuous bivariate correlation)
+### 2. Kaggle Datasets Used
+* **Dataset 1 (Titanic):** [Kaggle Titanic Competition](https://www.kaggle.com/competitions/titanic) *(Categorical proportions)*
+* **Dataset 2 (Superstore):** [Kaggle Sales Forecasting](https://www.kaggle.com/datasets/rohitsahoo/sales-forecasting) *(Continuous time-series)*
+* **Dataset 3 (Ames Housing):** [Kaggle House Prices Competition](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques) *(Continuous bivariate correlation)*
 
 ---
 
@@ -63,5 +90,5 @@ Data visualization translates complex quantitative data into intuitive visual pa
 
 ---
 
-### Conclusion & Justification
+### 3. Conclusion & Selection Justification
 Matching visual encodings to the data's mathematical structure is essential for accurate audience interpretation: a **grouped bar chart** was selected for the Titanic dataset because linear lengths on a common axis are easier to compare than circular angles; a **line chart** was chosen for sales trends because continuous slopes intuitively convey rate of change without bar clutter; and a **scatter plot** was selected for housing prices because it preserves correlation density, variance, and outliers that summary bar averages hide.
