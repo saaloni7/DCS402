@@ -1,0 +1,7 @@
+# Exclude large NFL dataset (>200MB, exceeds GitHub 100MB limit)
+NFL Play by Play 2009-2016 (v3).csv
+
+# Python and Jupyter artifacts
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
